@@ -13,7 +13,7 @@ after_success:
     - docker build -t devnryn/multi-client ./client
     - docker build -t devnryn/multi-nginx ./nginx
     - docker build -t devnryn/multi-server ./server
-    - docker built -t devnryn/multi-worker ./worker
+    - docker build -t devnryn/multi-worker ./worker
     # Log in to the docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Take these images and push them to docker hub 
